@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abarrotes DM</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/aBARROTES-removebg-preview.png" alt="bachoco">
+        </div>
+        <!--Navbar-->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#Destacados">Productos destacados</a></li>
+                <li><a href="#Alimentos">Alimentos</a></li>
+                <li><a href="#Bebidas">Bebidas</a></li>
+                <li><a href="#Belleza">Belleza</a></li>
+                <li><a href="#Limpieza">Limpieza</a></li>
+                <li><a href="#Otros">Otros</a></li>
+            </ul>
+        </nav>
+
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a onclick="closeNav()" href="#Destacados">Productos destacados</a>
+                <a onclick="closeNav()" href="#Huevo">Alimentos</a>
+                <a onclick="closeNav()" href="#Pollo">Bebidas</a>
+                <a onclick="closeNav()" href="#Cerdo">Belleza</a>
+                <a onclick="closeNav()" href="#Res">Limpieza</a>
+                <a onclick="closeNav()" href="#Otros">Otros</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="contenedor">
+        <!--Products-->
+        <!--Vendido-->
+        <div id="Destacados" class="Destacados"></div>
+            <div class="title">
+                <h1>Productos destacados</h1>
+            </div>
+
+        <div class="contenedor-items">
+            <div class="item">
+                <img src="img/Otros/Frutilupis.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">FruitLoops</span></h2>
+                <p><span class="precio-item">$70</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Otros/Harina_Hokakes.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Harina para Hot-cakes</span></h2>
+                <p><span class="precio-item">$35</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Belleza/Jabon_Zest.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Jabon Zest</span></h2>
+                <p><span class="precio-item">$16</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+
+        <div id="Alimentos" class="Alimentos"></div>
+            <div class="title">
+                <h1>Alimentos</h1>
+            </div>
+
+        <div class="contenedor-items">
+            <div class="item">
+                <img src="img/Alimentos/ModernaSpaghetti.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">La moderna Spaghetti 200grs</span></h2>
+                <p><span class="precio-item">$8</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Alimentos/ModernaTornillo.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">La moderna Tornillo 200grs</span></h2>
+                <p><span class="precio-item">$8</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Alimentos/LaSierraFrijoles.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">La Sierra Frojoles 430grs</span></h2>
+                <p><span class="precio-item">$15</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Alimentos/LaMorenaJalapeños.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">La Morena Jalapeños 225</span></h2>
+                <p><span class="precio-item">$24</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Alimentos/AceiteCapullo.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Aceite Capullo 845ml</span></h2>
+                <p><span class="precio-item">$81</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Alimentos/Sal.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Sal Roche 50kg</span></h2>
+                <p><span class="precio-item">$354</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+
+        <div id="Bebidas" class="Bebidas"></div>
+            <div class="title">
+                <h1>Bebidas</h1>
+            </div>
+
+        <div class="contenedor-items">
+            <div class="item">
+                <img src="img/Bebidas/BonafontLimon.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Agua Bonafont Levite Limon 1.4L</span></h2>
+                <p><span class="precio-item">$13</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Bebidas/BonafontPiñaCoco.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Agua Bonafont Levite Piña-Coco 1.4L</span></h2>
+                <p><span class="precio-item">$13</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Bebidas/Ciel5L.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Agua Ciel 5L</span></h2>
+                <p><span class="precio-item">$45</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Bebidas/Mundet.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Sidral Mundet 2L</span></h2>
+                <p><span class="precio-item">$23</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Bebidas/Peñafiel.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Peñafiel 2L</span></h2>
+                <p><span class="precio-item">$20</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Bebidas/Sprite.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Sprite 3L</span></h2>
+                <p><span class="precio-item">$30</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+
+        <div id="Belleza" class="Belleza"></div>
+            <div class="title">
+                <h1>Belleza</h1>
+            </div>
+
+        <div class="contenedor-items">
+            <div class="item">
+                <img src="img/Belleza/Jabon_Antibacterial.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Jabon Antibacterial </span></h2>
+                <p><span class="precio-item">$38</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Belleza/Jabon_Palmolive.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Jabon Palmolive</span></h2>
+                <p><span class="precio-item">$18</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Belleza/Jabon_Zest.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Jabon Zest</span></h2>
+                <p><span class="precio-item">$16</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Belleza/Pasta_Colgate.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Colgate pasta de dientes</span></h2>
+                <p><span class="precio-item">$20</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+
+        <div id="Limpieza" class="Limpieza"></div>
+            <div class="title">
+                <h1>Limpieza</h1>
+            </div>
+
+        <div class="contenedor-items">
+            <div class="item">
+                <img src="img/Limpieza/07501943412217.7.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Petalo 4 rollos</span></h2>
+                <p><span class="precio-item">$45</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Limpieza/Favuloso.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Fabuloso La Banda</span></h2>
+                <p><span class="precio-item">$35</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Limpieza/Persil.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Persil 5Kg</span></h2>
+                <p><span class="precio-item">$65</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Limpieza/RAID.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">RAID</span></h2>
+                <p><span class="precio-item">$38</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Limpieza/ROMA.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">ROMA 2.3Kg</span></h2>
+                <p><span class="precio-item">$40</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+
+        <div id="Otros" class="Otros"></div>
+            <div class="title">
+                <h1>Otros</h1>
+            </div>
+
+        <div class="contenedor-items">
+            <div class="item">
+                <img src="img/Otros/Atole_Maizena.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Maizena para Atole</span></h2>
+                <p><span class="precio-item">$15</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Otros/Bimbollos.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Bimbollos Bimbo</span></h2>
+                <p><span class="precio-item">$65</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Otros/Frutilupis.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">FruitLoops</span></h2>
+                <p><span class="precio-item">$70</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Otros/Harina_Hokakes.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Harina para Hot-cakes</span></h2>
+                <p><span class="precio-item">$35</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Otros/Leche_SantaClara.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Lecha Santa Clara 1L</span></h2>
+                <p><span class="precio-item">$20</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Otros/Nescafe.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Nescafe 500g</span></h2>
+                <p><span class="precio-item">$40</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="img/Otros/Pan_Bimbo_MulGra.webp" alt="" class="img-item">
+                <h2><span class="titulo-item">Pan Bimbo Multigrano</span></h2>
+                <p><span class="precio-item">$65</span></p>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <a onclick="openCar()" class="carrito-screen" href="#carr"><button><img src="icons/anadir-a-la-cesta.png" alt=""></button></a>
+
+        <div class="overlay-car" id="car">
+            <a onclick="closeCar()" href="" class="close-car">&times;</a>
+            <div class="overlay-content-car">
+                <div class="carrito" id="carrito">
+                    <div class="header-carrito">
+                        <h2>Tu Carrito</h2>
+                    </div>
+
+                    <div class="carrito-items">
+                    </div>
+                    <div class="carrito-total">
+                        <div class="fila">
+                            <strong>Tu Total</strong>
+                            <span class="carrito-precio-total">
+                                $0,00
+                            </span>
+                        </div>
+                        <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!--Footer-->
+
+    <script type="text/javascript" src="javascript/nav.js"></script>
+</body>
+</html>
